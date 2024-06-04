@@ -1,0 +1,214 @@
+/* intro section start */
+
+.intro-content {
+  padding-top: var(--sectionPadding);
+}
+
+.benefits {
+  height: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits span {
+  animation: auto-scroll 15s infinite;
+  font-size: 25px;
+}
+
+@keyframes auto-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-1em);
+  }
+  30% {
+    transform: translateY(-1em);
+  }
+  35% {
+    transform: translateY(-2em);
+  }
+  55% {
+    transform: translateY(-2em);
+  }
+  60% {
+    transform: translateY(-3em);
+  }
+  80% {
+    transform: translateY(-3em);
+  }
+  85% {
+    transform: translateY(-4em);
+  }
+  100% {
+    transform: translateY(-4em);
+  }
+}
+
+.intro-content--left--heading > .intro-2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: var(--fontFamily2);
+  font-weight: 800;
+  background-image: url(../images/IMG-20231209-WA0009.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-content--left--heading > .intro-3 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: var(--fontFamily2);
+  font-weight: 800;
+  background-image: url(../images/bg-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-content--left--text {
+  font-size: 20px;
+  font-family: var(--fontFamily2);
+  font-weight: 400;
+}
+
+.intro-content--right {
+  border-radius: 50%;
+  padding-left: 50px;
+}
+/* intro section ends */
+
+/* KPINASCO sales section start */
+#kpinasco-sales-section {
+  background-color: gainsboro;
+  color: var(--color3);
+  padding-top: var(--sectionPadding1);
+  padding-bottom: var(--sectionPadding1);
+}
+
+.kpinasco-sales-content-top {
+  color: red;
+  text-align: center;
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+  font-size: 60px;
+  font-family: var(--fontFamily2);
+  font-weight: 900;
+  background-image: url(../images/IMG-20231209-WA0009.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.kpinasco-sales-srt img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.kpinasco-sales-text {
+  padding-top: 30px;
+  font-size: var(--fontSize6);
+  font-family: var(--fontFamily2);
+  font-weight: 600;
+}
+
+.choose-us-content--bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.choose-us-content--bottom .card {
+  background-color: var(--color7);
+  padding-top: 40px;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+}
+
+.line {
+  width: 100%;
+  height: 1.8px;
+  background-color: var(--color3);
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: var(--color12);
+  font-family: var(--fontFamily2);
+  font-size: var(--fontSize8);
+  font-weight: 900;
+}
+
+.choose-us-content--bottom button {
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  background: black;
+}
+
+.choose-us-content--bottom button:hover {
+  background-color: rgba(5, 23, 11, 0.45);
+  cursor: pointer;
+  transition: all 3s ease-in-out;
+}
+
+.choose-us-content--bottom button a {
+  text-decoration: none;
+  color: var(--color3);
+  font-size: var(--fontSize7);
+  font-family: var(--fontFamily2);
+  font-weight: 800;
+  transition: all 3s ease-in-out;
+}
+
+.choose-us-content--bottom button:hover a {
+  color: black;
+}
+
+/* marquee  */
+marquee {
+  width: 400px;
+}
+/* KPINASCO sales section ends */
+
+/* responsive choose us section starts */
+/* <= 1000px */
+@media (max-width: 1000px) {
+  .choose-us-content--bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* <= 768 */
+@media (max-width: 768px) {
+  .choose-us-content--bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* <= 486 */
+@media (max-width: 486px) {
+  .choose-us-content--bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* responsive choose us section ends */
