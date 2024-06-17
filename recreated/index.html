@@ -32,7 +32,7 @@
   </head>
   <body>
     <!-- header and navbar start -->
-    <header>
+    <header id="header">
       <nav class="container">
         <a href="index.html" class="logo">
           <img
@@ -42,9 +42,9 @@
         </a>
         <div class="links" id="links">
           <a href="#">Home</a>
-          <a href="#About">About</a>
-          <a href="#">Services</a>
-          <a href="#">Awards</a>
+          <a href="#intro-section">About</a>
+          <a href="#kpinasco-sales-section">Services</a>
+          <a href="#Awards-section">Awards</a>
           <a href="./contact.html">Contact Us</a>
         </div>
 
@@ -56,7 +56,7 @@
     <!-- header and navbar ends -->
 
     <!-- intro section -->
-    <section class="intro-section">
+    <section id="intro-section" class="intro-section">
       <div class="intro-content container grid">
         <!-- left side -->
         <div class="intro-content-left flex">
@@ -67,10 +67,18 @@
               <span>Welcome To</span>
             </div>
             <span class="intro-2">KPINASCO</span> <br />
-            <span class="intro-3">SALES COMPANY</span>
+            <span class="intro-3">GROUP OF COMPANIES</span>
           </div>
 
-          <p class="intro-content--left--text">
+          <p
+            class="intro-content--left--text"
+            style="
+              font-size: 20px;
+              font-weight: 900;
+              font-family: var(--fontFamily2);
+              color: #4b5154;
+            "
+          >
             We are a business model that is aimed at giving our customers an
             unforgettable expericence with our numerous services.
           </p>
@@ -85,14 +93,14 @@
     </section>
 
     <!-- line -->
-    <div class="line"></div>
+    <!-- <div class="line"></div> -->
 
     <!-- KPINASCO sales section start start -->
-    <section id="kpinasco-sales-section">
+    <section id="kpinasco-sales-section" style="background-color: #4b5154">
       <div class="kpinasco-sales-content container flex">
         <!-- top -->
         <div class="kpinasco-sales-content-top flex">
-          <div class="kpinasco-sale-content-text">KPINASCO BEST SALES</div>
+          <div class="kpinasco-sale-content-text">KPINASCO SERVICES</div>
         </div>
 
         <!-- buttom -->
@@ -106,7 +114,7 @@
                   <img src="./src/images/apartment.jpg" alt="" />
                   <img src="./src/images/apartment1.jpg" alt="" />
                   <img src="./src/images/apartment2.jpg" alt="" />
-                  <img src="./src/images/apartment3.jpg" alt="" />
+                  <img src="./src/images/apatment3.jpeg" alt="" />
                 </marquee>
                 <p class="kpinasco-sales-text">
                   Kpinasco apartment and shortlets
@@ -124,7 +132,12 @@
             <div class="kpinasco-sales">
               <div class="kpinasco-sales-srt">
                 <!-- card section 2 -->
-                <img src="./src/images/bouti1.jpg" alt="" />
+                <marquee behavior="" direction="">
+                  <img src="./src/images/bouti1.jpg" alt="" />
+                  <img src="./src/images/bouti2.jpg" alt="" />
+                  <img src="./src/images/bouti3.jpg" alt="" />
+                  <img src="./src/images/bouti1.jpg" alt="" />
+                </marquee>
                 <!-- card section 3 -->
                 <p class="kpinasco-sales-text">Kpinasco Fashion World</p>
                 <!-- card section 4 -->
@@ -142,7 +155,13 @@
             <div class="kpinasco-sales">
               <div class="kpinasco-sales-srt">
                 <!-- card section 2 -->
-                <img src="./src/images/phone1.jpeg" alt="" />
+                <marquee behavior="" direction="">
+                  <img src="./src/images/phone1.jpeg" alt="" />
+                  <img src="./src/images/phone2.jpeg" alt="" />
+                  <img src="./src/images/phone3.jpg" alt="" />
+                  <img src="./src/images/phone4.jpg" alt="" />
+                  <img src="./src/images/phone1.jpeg" alt="" />
+                </marquee>
                 <!-- card section 3 -->
                 <p class="kpinasco-sales-text">Kpinasco phone accessories</p>
                 <!-- card section 4 -->
@@ -160,7 +179,13 @@
             <div class="kpinasco-sales">
               <div class="kpinasco-sales-srt">
                 <!-- card section 2 -->
-                <img src="./src/images/landury1.jpeg" alt="" />
+                <marquee behavior="" direction="right">
+                  <img src="./src/images/landury1.jpeg" alt="" />
+                  <img src="./src/images/landury2.jpeg" alt="" />
+                  <img src="./src/images/landury3.jpeg" alt="" />
+                  <img src="./src/images/landurt 4.jpeg" alt="" />
+                  <img src="./src/images/landury1.jpeg" alt="" />
+                </marquee>
                 <!-- card section 3 -->
                 <p class="kpinasco-sales-text">Kpinasco laundry service</p>
                 <!-- card section 4 -->
@@ -173,8 +198,58 @@
           </div>
         </div>
       </div>
+
+      <!-- ccc -->
+      <div class="slider"></div>
     </section>
     <!-- KPINASCO sales section start ends -->
+
+    <!-- Award section start -->
+    <section id="Awards-section">
+      <div class="awards-content container flex">
+        <!-- top -->
+        <div class="awards-content-top flex">
+          <div class="awards-content-heading">AWARDS</div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="awards-content-bottom">
+          <!-- card 1 -->
+          <div class="card flex">
+            <div class="card-image">
+              <img
+                class="responsive-image"
+                src="./src/images/IMG-20240614-WA0040.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card flex">
+            <div class="card-image">
+              <img
+                class="responsive-image"
+                src="./src/images/IMG-20240614-WA0041.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card flex">
+            <div class="card-image">
+              <img
+                class="responsive-image"
+                src="./src/images/IMG-20240614-WA0060.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Award section ends -->
 
     <!-- Footer Section starts -->
     <footer id="footer-section">

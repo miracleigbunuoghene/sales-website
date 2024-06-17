@@ -67,8 +67,16 @@ html {
 
 /* header and navber start */
 header {
-  background-color: var(--color1);
+  /* background-color: var(--color1); */
+  background: #2c3e50;
   padding: 10px 0;
+}
+
+#header {
+  position: sticky;
+  /* border: 3px solid red; */
+  top: 0;
+  z-index: 1;
 }
 
 nav {
@@ -94,10 +102,10 @@ nav .links a {
   font-family: var(--fontFamily2);
   transition: all 1s ease-in-out;
 }
-
+/* 
 nav .links a:hover {
   color: black;
-}
+} */
 
 nav .hambuger {
   color: var(--color2);
@@ -112,7 +120,7 @@ nav .hambuger {
 #footer-section {
   padding-top: var(--sectionPadding);
   padding-bottom: var(--sectionPadding);
-  background-color: black;
+  background-color: #2c3e50;
   color: var(--color2);
 }
 
@@ -155,15 +163,37 @@ nav .hambuger {
 }
 
 /* responsive header and navbar section */
-/* from 0 to 768px */
+@media (max-width: 1000px) {
+  marquee {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  marquee {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 486px) {
+  marquee {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* from 0 to 768px */
+@media (max-width: 1000px) {
   .container {
-    width: 95%;
+    width: 90%;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   nav {
@@ -177,7 +207,7 @@ nav .hambuger {
     display: block;
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 5px;
   }
 
   nav .links {
